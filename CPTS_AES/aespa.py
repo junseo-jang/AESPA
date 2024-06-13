@@ -25,8 +25,8 @@ class Options():
         self.initialize_parser()
 
     def initialize_parser(self):
-        self.parser.add_argument('--do_train', type=bool, default=False, help='Whether training or evaluation')
-        self.parser.add_argument('--do_test', type=bool, default=True, help='Whether validation or test')
+        self.parser.add_argument('--do_train', type=bool, default=True, help='Whether training or evaluation')
+        self.parser.add_argument('--do_test', type=bool, default=False, help='Whether validation or test')
         self.parser.add_argument('--name', type=str, default='seen_gateway_sw_kop', help='name of the experiment')
         self.parser.add_argument('--checkpoint_dir', type=str, default='CPTS_AES/checkpoint/', help='models are saved here')
         self.parser.add_argument('--checkpoint_step', type=str, default='best', help='checkpoint step')
